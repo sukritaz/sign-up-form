@@ -1,0 +1,169 @@
+:root {
+    --main-height: 100vh;
+    --creative-card-width: 60vw;
+    --content-card-width: calc(100vw - var(--creative-card-width));
+    --content-card-background-color-night: rgb(14, 13, 32);
+    --form-width: calc(var(--content-card-width)/2);
+    --font-colour-night-mode: rgb(42, 38, 92);
+    --label-width: 100px;
+    --sign-up-form-backgroud-color: rgb(226, 206, 215);
+    --h1-font-color: rgb(221, 150, 183);
+    --sign-up-form-border-color: rgb(49, 46, 83);
+    --heading-height: 20vh;
+    --form-height: calc(100vh - var(--heading-height));
+    --sign-up-form-font-size: 24px;
+}
+
+body {
+    overflow: hidden;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main {
+    display: flex;
+    height: var(--main-height);
+}
+
+.lofi-girl {
+    height: calc(100%);
+    object-fit: cover;
+    object-position: 100%;
+}
+
+.creative-card {
+    width: var(--creative-card-width);
+}
+
+.content-card {
+    display: flex;
+    width: var(--content-card-width);
+    background-color: var(--content-card-background-color-night);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+form {
+    display: grid;
+    gap: 30px;
+    color: var(--font-colour-night-mode);
+}
+
+input {
+    background-color: var(--sign-up-form-backgroud-color);
+    color: var(--font-colour-night-mode);
+    border: none;
+    font-size: var(--sign-up-form-font-size);
+}
+input:focus {
+    background-color: none;
+    border-bottom: 1px solid;
+    outline: none;
+}
+
+#full-form {
+    background-color: var(--sign-up-form-backgroud-color);
+    font-size: var(--sign-up-form-font-size);
+    font-weight: 800;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    border: 5px var(--sign-up-form-backgroud-color);
+}
+
+#sign-up>div {
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 0.1em;
+    padding: 10px;
+
+}
+
+button {
+    padding: 10px 50px;
+    font-size: var(--sign-up-form-font-size);
+    color: var(--sign-up-form-backgroud-color);
+    border-radius: 5px;
+    background-color: var(--content-card-background-color-night);
+    border: none;
+    cursor: pointer;
+}
+
+label {    
+    padding: 10px;
+}
+
+.heading {
+    color: var(--h1-font-color);
+    font-size: 42px;
+    padding: 50px;
+    font-weight: 800;
+    margin-bottom: 50px;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.project-odin-logo {
+    position: absolute;
+    width: 10vw;
+    margin: 10px;
+}
+
+.footer {
+    display: flex;
+    position: fixed;
+    bottom: 0px;
+    height: 3vh;
+    width: 100%;
+    color: var(--sign-up-form-backgroud-color);
+    background-color: var(--content-card-background-color-night);
+    opacity: 50%;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+
+}
+
+a {
+    color: var(--sign-up-form-backgroud-color);    
+    text-decoration: none;
+}
+
+a:hover {
+    color: blueviolet;
+}
+
+.user-setting, .user-setting>div>button>img, #no-audio-sign {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    height: 4vh;
+    padding: 10px;
+    margin: 10px;
+}
+
+.user-setting {
+    display: flex;
+}
+
+#outro {
+    display: none;
+    color: var(--h1-font-color);
+    font-size: 42px;
+    padding: 50px;
+    font-weight: 800;
+    margin-bottom: 50px;
+}
+
+.input {
+    /* display: flex; */
+    background-color: var(--sign-up-form-backgroud-color);
+    /* padding: 10px; */
+}
+
