@@ -36,7 +36,6 @@ main {
 }
 
 .content-card {
-    position: relative;
     display: flex;
     width: var(--content-card-width);
     background-color: var(--content-card-background-color-night);
@@ -57,17 +56,23 @@ input {
     border: none;
     font-size: var(--sign-up-form-font-size);
 }
+input:focus {
+    background-color: none;
+    border-bottom: 1px solid;
+    outline: none;
+}
 
-#sign-up {
+#full-form {
     background-color: var(--sign-up-form-backgroud-color);
     font-size: var(--sign-up-form-font-size);
     font-weight: 800;
     padding: 20px;
+    margin: 20px;
     border-radius: 5px;
     border: 5px var(--sign-up-form-backgroud-color);
 }
 
-#sign-up > div {
+#sign-up>div {
     display: flex;
     justify-content: space-between;
     letter-spacing: 0.1em;
@@ -82,10 +87,11 @@ button {
     border-radius: 5px;
     background-color: var(--content-card-background-color-night);
     border: none;
+    cursor: pointer;
 }
 
-label {
-padding: 10px;
+label {    
+    padding: 10px;
 }
 
 .heading {
@@ -100,11 +106,12 @@ padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 20px;
 }
 
 .project-odin-logo {
     position: absolute;
-    width: 15vw;
+    width: 10vw;
     margin: 10px;
 }
 
@@ -119,10 +126,44 @@ padding: 10px;
     opacity: 50%;
     align-items: center;
     justify-content: center;
+    margin: 0;
 
 }
 
 a {
-    color: var(--sign-up-form-backgroud-color);
-    text-decoration: none;    
+    color: var(--sign-up-form-backgroud-color);    
+    text-decoration: none;
 }
+
+a:hover {
+    color: blueviolet;
+}
+
+.user-setting, .user-setting>div>button>img, #no-audio-sign {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    height: 4vh;
+    padding: 10px;
+    margin: 10px;
+}
+
+.user-setting {
+    display: flex;
+}
+
+#outro {
+    display: none;
+    color: var(--h1-font-color);
+    font-size: 42px;
+    padding: 50px;
+    font-weight: 800;
+    margin-bottom: 50px;
+}
+
+.input {
+    /* display: flex; */
+    background-color: var(--sign-up-form-backgroud-color);
+    /* padding: 10px; */
+}
+
